@@ -1,22 +1,45 @@
-# Image Processing with OpenCV
+# 🖼️ Image Processing with OpenCV
 
-A collection of introductory image processing laboratory exercises implemented using **Python**, **OpenCV**, and **NumPy**. These labs demonstrate fundamental image manipulation techniques, thresholding operations, grayscale conversion, image rotation, and file handling.
+A comprehensive collection of introductory **Digital Image Processing** laboratory exercises developed using **Python**, **OpenCV**, and **NumPy**. This repository demonstrates fundamental image processing techniques such as grayscale conversion, thresholding, filtering, histogram processing, edge detection, segmentation, connected component analysis, face detection, and image transformations.
 
----
-
-## Project Overview
-
-This repository contains practical exercises designed to help students understand basic image processing concepts and gain hands-on experience with the OpenCV library.
-
-### Technologies Used
-
-- Python 3.x
-- OpenCV
-- NumPy
+Designed for students and beginners, these practical exercises provide hands-on experience with OpenCV while strengthening core image processing concepts.
 
 ---
 
-## Project Structure
+# 📚 Project Overview
+
+This repository contains a series of laboratory exercises completed as part of a Digital Image Processing course. Each lab focuses on a specific image processing technique and includes well-documented Python scripts or Jupyter Notebooks for learning and experimentation.
+
+---
+
+# ✨ Features
+
+* Image loading and display
+* Grayscale image conversion
+* Image thresholding techniques
+* Image filtering and smoothing
+* Image sharpening
+* Histogram plotting and equalization
+* Sobel, Laplacian, and Canny edge detection
+* Hough Line Detection
+* Image segmentation
+* Connected Component Labeling
+* Face detection using OpenCV
+* Image rotation and saving
+* Pixel manipulation using NumPy
+
+---
+
+# 🛠 Technologies Used
+
+* Python 3.8+
+* OpenCV
+* NumPy
+* Jupyter Notebook
+
+---
+
+# 📁 Project Structure
 
 ```text
 Image_Processing/
@@ -25,208 +48,333 @@ Image_Processing/
 ├── Lab_2.py
 ├── lab3.ipynb
 ├── Lab4.ipynb
-├── Lab10.ipynb
 ├── Lab7.ipynb
+├── Lab10.ipynb
+│
 ├── image_lab.png
 ├── image_lab.jpg
-├── image_lab_gray.jpg      (generated)
-├── image_lab_rotated.jpg   (generated)
+├── image_lab_gray.jpg        # Generated
+├── image_lab_rotated.jpg     # Generated
 ├── segmented_output.png
 ├── component_output.png
 ├── video.mp4
+│
 └── README.md
 ```
 
 ---
 
-## Executed Notebooks
+# 📖 Laboratory Exercises
 
-### Files
+## 🔹 Lab 1 – Image Thresholding
 
-- `lab3.ipynb`
-- `Lab4.ipynb`
-- `Lab10.ipynb`
-- `Lab7.ipynb`
-
-### Summary
-
-- `lab3.ipynb` - executed successfully; includes filter visualizations, kernel demonstrations, and compare filter types on `image_lab.jpg` with the interactive demo auto-exit.
-- `Lab4.ipynb` - executed successfully; includes grayscale conversion, histogram visualization, smoothing filters, sharpening filters, and histogram equalization using `image_lab.jpg`.
-- `Lab10.ipynb` - executed successfully; includes histogram plotting, global/adaptive/Otsu thresholding, Sobel and Laplacian edge detection, Canny edge detection, and Hough line detection using `image_lab.jpg`.
-- `Lab7.ipynb` - executed successfully; includes image segmentation, connected component labeling, and face detection using `image_lab.jpg` and `video.mp4`.
-
-### Run
-
-Open the `.ipynb` files in Jupyter Notebook or VS Code and run the cells sequentially.
-
----
-
-## Requirements
-
-- Python 3.8 or later
-- OpenCV
-- NumPy
-
-Install the required dependencies:
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-### Verify Installation
-
-```powershell
-python -c "import cv2; print(cv2.__version__)"
-python -c "import numpy; print(numpy.__version__)"
-```
-
----
-
-# Lab 1 – Image Thresholding
-
-### File
-
-```text
-Lab_1.py
-```
+**File:** `Lab_1.py`
 
 ### Objective
 
-Demonstrate various thresholding techniques available in OpenCV.
+Explore various thresholding techniques provided by OpenCV.
 
-### Features
+### Topics Covered
 
-- Load and display an image
-- Convert image intensity values using thresholding
-- Compare different thresholding methods visually
+* Image loading
+* Thresholding
+* Image visualization
 
-### Thresholding Methods Demonstrated
+### Threshold Types
 
-- THRESH_BINARY
-- THRESH_BINARY_INV
-- THRESH_TRUNC
-- THRESH_TOZERO
-- THRESH_TOZERO_INV
+* THRESH_BINARY
+* THRESH_BINARY_INV
+* THRESH_TRUNC
+* THRESH_TOZERO
+* THRESH_TOZERO_INV
 
 ### Input
 
-- Reads an image specified inside the script (`image_lab.png`)
+```
+image_lab.png
+```
 
 ### Output
 
 Displays:
 
-- Original Image
-- Binary Threshold Image
-- Binary Inverted Image
-- Truncated Image
-- To-Zero Image
-- To-Zero Inverted Image
+* Original Image
+* Binary Threshold
+* Binary Inverted
+* Truncated Image
+* To-Zero Image
+* To-Zero Inverted Image
 
 ### Run
 
-```powershell
+```bash
 python Lab_1.py
 ```
 
 ---
 
-# Lab 2 – Basic Image Operations
+## 🔹 Lab 2 – Basic Image Operations
 
-### File
-
-```text
-Lab_2.py
-```
+**File:** `Lab_2.py`
 
 ### Objective
 
 Perform fundamental image processing operations using OpenCV and NumPy.
 
-### Features
+### Topics Covered
 
-- Load image from the project directory
-- Convert image to grayscale
-- Display original and grayscale images
-- Print image dimensions
-- Access pixel data
-- Rotate image by 180°
-- Save processed images
+* Read image
+* Convert RGB to Grayscale
+* Display images
+* Image dimensions
+* Pixel access
+* Rotate image (180°)
+* Save processed images
 
 ### Input
 
-```text
+```
 image_lab.jpg
 ```
 
-### Output Files
+### Generated Output
 
-```text
+```
 image_lab_gray.jpg
 image_lab_rotated.jpg
 ```
 
 ### Run
 
-```powershell
+```bash
 python Lab_2.py
 ```
 
 ---
 
-## Setup Guide
+## 🔹 Lab 3 – Image Filtering
 
-### Create a Virtual Environment (Recommended)
+**Notebook:** `lab3.ipynb`
+
+### Topics Covered
+
+* Average Filter
+* Gaussian Filter
+* Median Filter
+* Bilateral Filter
+* Kernel visualization
+* Comparison of filtering techniques
+
+---
+
+## 🔹 Lab 4 – Histogram & Image Enhancement
+
+**Notebook:** `Lab4.ipynb`
+
+### Topics Covered
+
+* Grayscale conversion
+* Histogram plotting
+* Histogram Equalization
+* Image smoothing
+* Image sharpening
+
+---
+
+## 🔹 Lab 7 – Image Segmentation
+
+**Notebook:** `Lab7.ipynb`
+
+### Topics Covered
+
+* Image Segmentation
+* Connected Component Labeling
+* Face Detection
+* Video Processing
+
+### Input Files
+
+* `image_lab.jpg`
+* `video.mp4`
+
+### Generated Files
+
+* `segmented_output.png`
+* `component_output.png`
+
+---
+
+## 🔹 Lab 10 – Edge Detection & Thresholding
+
+**Notebook:** `Lab10.ipynb`
+
+### Topics Covered
+
+* Histogram Analysis
+* Global Thresholding
+* Adaptive Thresholding
+* Otsu Thresholding
+* Sobel Edge Detection
+* Laplacian Edge Detection
+* Canny Edge Detection
+* Hough Line Detection
+
+---
+
+# ✅ Executed Notebooks
+
+The following notebooks have been tested successfully.
+
+| Notebook      | Status      | Description                                        |
+| ------------- | ----------- | -------------------------------------------------- |
+| `lab3.ipynb`  | ✅ Completed | Image filtering and kernel demonstrations          |
+| `Lab4.ipynb`  | ✅ Completed | Histogram processing and enhancement               |
+| `Lab7.ipynb`  | ✅ Completed | Segmentation, connected components, face detection |
+| `Lab10.ipynb` | ✅ Completed | Thresholding and edge detection                    |
+
+Run each notebook sequentially using **Jupyter Notebook** or **Visual Studio Code**.
+
+---
+
+# ⚙️ Requirements
+
+* Python 3.8 or later
+* OpenCV
+* NumPy
+* Jupyter Notebook (optional)
+
+---
+
+# 🚀 Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/subhash107k/Image_Processing.git
+
+cd Image_Processing
+```
+
+---
+
+## Create a Virtual Environment (Recommended)
+
+### Windows
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-### Install Dependencies
+### Linux / macOS
 
-```powershell
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
 pip install opencv-python numpy
 ```
 
-### Run the Labs
+Or install using:
 
-```powershell
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Verify Installation
+
+```bash
+python -c "import cv2; print(cv2.__version__)"
+python -c "import numpy; print(numpy.__version__)"
+```
+
+---
+
+# ▶️ Running the Labs
+
+```bash
 python Lab_1.py
 python Lab_2.py
 ```
 
----
+For Jupyter notebooks:
 
-## Learning Outcomes
+```bash
+jupyter notebook
+```
 
-After completing these labs, students will be able to:
-
-- Understand digital image representation
-- Load and display images using OpenCV
-- Convert images to grayscale
-- Apply image thresholding techniques
-- Access image pixel data using NumPy
-- Perform image transformations
-- Save processed images
-- Work with OpenCV image processing workflows
+Open the desired notebook and execute the cells sequentially.
 
 ---
 
-## Future Improvements
+# 🎯 Learning Outcomes
 
-- Replace absolute image paths with relative paths
-- Add command-line argument support
-- Implement adaptive thresholding
-- Add histogram visualization
-- Add image resizing and cropping operations
-- Support batch image processing
-- Build a simple GUI for image selection
+After completing these laboratory exercises, you will be able to:
+
+* Understand digital image representation
+* Read and display images using OpenCV
+* Convert color images to grayscale
+* Apply different thresholding methods
+* Access and manipulate image pixels with NumPy
+* Perform image transformations
+* Apply smoothing and sharpening filters
+* Analyze image histograms
+* Detect edges using multiple techniques
+* Perform image segmentation
+* Detect faces using OpenCV
+* Save processed images
+* Build a strong foundation in Digital Image Processing
 
 ---
 
-## Author
+# 🚀 Future Improvements
+
+* Replace hardcoded image paths with command-line arguments
+* Support batch image processing
+* Add image resizing and cropping
+* Implement morphological operations
+* Add contour detection
+* Include color space transformations (HSV, LAB, YCrCb)
+* Add feature detection (SIFT, SURF, ORB)
+* Build a simple GUI using Tkinter or PyQt
+* Add real-time webcam processing examples
+* Improve documentation with sample output images
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve the repository:
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push to your fork.
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is intended for educational purposes. You may freely use and modify the code for learning and academic projects.
+
+---
+
+# 👨‍💻 Author
 
 **Subhash Sharma**
 
-GitHub: https://github.com/subhash107k
+* GitHub: https://github.com/subhash107k
+* Python • OpenCV • Computer Vision • Machine Learning • MERN Stack
+
+If you find this repository useful, consider giving it a ⭐ on GitHub.
