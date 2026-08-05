@@ -10,9 +10,9 @@ This repository contains practical exercises designed to help students understan
 
 ### Technologies Used
 
-* Python 3.x
-* OpenCV
-* NumPy
+- Python 3.x
+- OpenCV
+- NumPy
 
 ---
 
@@ -23,20 +23,46 @@ Image_Processing/
 │
 ├── Lab_1.py
 ├── Lab_2.py
+├── Lab4.ipynb
+├── Lab7.ipynb
+├── Lab10.ipynb
 ├── image_lab.png
 ├── image_lab.jpg
 ├── image_lab_gray.jpg      (generated)
 ├── image_lab_rotated.jpg   (generated)
+├── segmented_output.png
+├── component_output.png
+├── video.mp4
 └── README.md
 ```
 
 ---
 
+## Executed Notebooks
+
+### Files
+
+- `Lab4.ipynb`
+- `Lab7.ipynb`
+- `Lab10.ipynb`
+
+### Summary
+
+- `Lab4.ipynb` - executed successfully; includes grayscale conversion, histogram visualization, smoothing filters, sharpening filters, and histogram equalization using `image_lab.jpg`.
+- `Lab7.ipynb` - executed successfully; includes image segmentation, connected component labeling, and face detection using `image_lab.jpg` and `video.mp4`.
+- `Lab10.ipynb` - executed successfully; includes histogram plotting, global/adaptive/Otsu thresholding, Sobel and Laplacian edge detection, Canny edge detection, and Hough line detection using `image_lab.jpg`.
+
+### Run
+
+Open the `.ipynb` files in Jupyter Notebook or VS Code and run the cells sequentially.
+
+---
+
 ## Requirements
 
-* Python 3.8 or later
-* OpenCV
-* NumPy
+- Python 3.8 or later
+- OpenCV
+- NumPy
 
 Install the required dependencies:
 
@@ -67,32 +93,32 @@ Demonstrate various thresholding techniques available in OpenCV.
 
 ### Features
 
-* Load and display an image
-* Convert image intensity values using thresholding
-* Compare different thresholding methods visually
+- Load and display an image
+- Convert image intensity values using thresholding
+- Compare different thresholding methods visually
 
 ### Thresholding Methods Demonstrated
 
-* THRESH_BINARY
-* THRESH_BINARY_INV
-* THRESH_TRUNC
-* THRESH_TOZERO
-* THRESH_TOZERO_INV
+- THRESH_BINARY
+- THRESH_BINARY_INV
+- THRESH_TRUNC
+- THRESH_TOZERO
+- THRESH_TOZERO_INV
 
 ### Input
 
-* Reads an image specified inside the script (`image_lab.png`)
+- Reads an image specified inside the script (`image_lab.png`)
 
 ### Output
 
 Displays:
 
-* Original Image
-* Binary Threshold Image
-* Binary Inverted Image
-* Truncated Image
-* To-Zero Image
-* To-Zero Inverted Image
+- Original Image
+- Binary Threshold Image
+- Binary Inverted Image
+- Truncated Image
+- To-Zero Image
+- To-Zero Inverted Image
 
 ### Run
 
@@ -116,13 +142,13 @@ Perform fundamental image processing operations using OpenCV and NumPy.
 
 ### Features
 
-* Load image from the project directory
-* Convert image to grayscale
-* Display original and grayscale images
-* Print image dimensions
-* Access pixel data
-* Rotate image by 180°
-* Save processed images
+- Load image from the project directory
+- Convert image to grayscale
+- Display original and grayscale images
+- Print image dimensions
+- Access pixel data
+- Rotate image by 180°
+- Save processed images
 
 ### Input
 
@@ -173,26 +199,26 @@ python Lab_2.py
 
 After completing these labs, students will be able to:
 
-* Understand digital image representation
-* Load and display images using OpenCV
-* Convert images to grayscale
-* Apply image thresholding techniques
-* Access image pixel data using NumPy
-* Perform image transformations
-* Save processed images
-* Work with OpenCV image processing workflows
+- Understand digital image representation
+- Load and display images using OpenCV
+- Convert images to grayscale
+- Apply image thresholding techniques
+- Access image pixel data using NumPy
+- Perform image transformations
+- Save processed images
+- Work with OpenCV image processing workflows
 
 ---
 
 ## Future Improvements
 
-* Replace absolute image paths with relative paths
-* Add command-line argument support
-* Implement adaptive thresholding
-* Add histogram visualization
-* Add image resizing and cropping operations
-* Support batch image processing
-* Build a simple GUI for image selection
+- Replace absolute image paths with relative paths
+- Add command-line argument support
+- Implement adaptive thresholding
+- Add histogram visualization
+- Add image resizing and cropping operations
+- Support batch image processing
+- Build a simple GUI for image selection
 
 ---
 
