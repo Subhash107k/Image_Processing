@@ -24,8 +24,8 @@ Image_Processing/
 ├── Lab_1.py
 ├── Lab_2.py
 ├── Lab4.ipynb
+├── Lab6.ipynb
 ├── Lab7.ipynb
-├── Lab10.ipynb
 ├── image_lab.png
 ├── image_lab.jpg
 ├── image_lab_gray.jpg      (generated)
@@ -43,14 +43,14 @@ Image_Processing/
 ### Files
 
 - `Lab4.ipynb`
+- `Lab6.ipynb`
 - `Lab7.ipynb`
-- `Lab10.ipynb`
 
 ### Summary
 
 - `Lab4.ipynb` - executed successfully; includes grayscale conversion, histogram visualization, smoothing filters, sharpening filters, and histogram equalization using `image_lab.jpg`.
+- `Lab6.ipynb` - executed successfully; includes histogram plotting, global/adaptive/Otsu thresholding, Sobel and Laplacian edge detection, Canny edge detection, and Hough line detection using `image_lab.jpg`.
 - `Lab7.ipynb` - executed successfully; includes image segmentation, connected component labeling, and face detection using `image_lab.jpg` and `video.mp4`.
-- `Lab10.ipynb` - executed successfully; includes histogram plotting, global/adaptive/Otsu thresholding, Sobel and Laplacian edge detection, Canny edge detection, and Hough line detection using `image_lab.jpg`.
 
 ### Run
 
